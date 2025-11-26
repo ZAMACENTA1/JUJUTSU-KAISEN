@@ -9,30 +9,13 @@ class Robot:
         self.drive_base = DriveBase(left_motor, right_motor, wheel_diameter, axle_track)
         self.hub = PrimeHub()
         self.drive_base.use_gyro(True)
-        self.historia = []
 
     #Movimiento
-    def straight(self, distance,guardar=True):
+    def straight(self, distance):
         self.drive_base.straight(distance)
-        self.historia.append(["straight", [distance]])
-        print(self.historia)
-
-    def turn(self, angle,guardar=True):
+        
+    def turn(self, angle):
         self.drive_base.turn(angle)
-        self.historia.append(["turn", [angle]])
-        print(self.historia)
-
-def deshacer(self,inst):
-    if inst [0]=="straight":
-    distancia=inst[1][0]
-    self.straight(=distancia,guardar=False) 
-    elif inst [0] =="turn"
-        angle = inst[1][0]
-        self.turn(=angle,guardar=False) 
-
-def deshacer_historia(self):
-    for inst in reversed(self historia): 
-        self.deshacer(inst)
 
     #Sonido
     def beep(self, freq, duration):
@@ -50,7 +33,116 @@ def deshacer_historia(self):
 
     def light_animate(self, colors, interval):
         self.hub.light.animate(colors, interval)
-        
 
-        
+self.historia=[]
+self.sensores=dict()
+
+def guardar_sensor(self,nombre,sensor):
+    self.sensores[nombre]=sensor
+
+def sensor(self,nombre)
+    return self.sensores.get(nombre)
+
+
+
+color=ColorSensor(E)
+
+
+r=Robot(...)
+r.guardar_sensor("color",color)
+
+print(r.sensor("color"))
+
+
+while True:
+c=r.sensor("color").color()
+print(c)
+
+if c==Color.RED
+r.beep(800,1000) 
+
+elif c==Color.BLUE
+rself.historia=[]
+self.sensores=dict()
+
+def guardar_sensor(self,nombre,sensor):
+…
+elif c==Color.BROWN
+r.beep(3000,1000)
+
+elif c==Color.CYAN
+r.beep(3100,1000)
+
+.beep(1000,1000)
+
+elif c==Color.WHITE
+r.beep(1200,1000)
+
+elif c==Color.GREEN
+r.beep(1400,1000)
+
+elif c==Color.YELLOW
+r.beep(1600,1000)
+
+elif c==Color.GRAY
+r.beep(1800,1000)
+
+elif c==Color.MAGENTA
+r.beep(2000,1000)
+
+elif c==Color.VIOLET
+r.beep(2200,1000)
+
+elif c==Color.ORANGE
+r.beep(2400,1000)
+
+elif c==Color.NONE
+r.beep(2600,1000)
+
+elif c==Color.BLACK
+r.beep(2800,1000)
+
+elif c==Color.BROWN
+r.beep(3000,1000)
+
+elif c==Color.CYAN
+r.beep(3100,1000)
+if c==Color.RED
+r.beep(800,1000) 
+
+elif c==Color.BLUE
+r.beep(1000,1000)
+
+elif c==Color.WHITE
+r.beep(1200,1000)
+
+elif c==Color.GREEN
+r.beep(1400,1000)
+
+elif c==Color.YELLOW
+r.beep(1600,1000)
+
+elif c==Color.GRAY
+r.beep(1800,1000)
+
+elif c==Color.MAGENTA
+r.beep(2000,1000)
+
+elif c==Color.VIOLET
+r.beep(2200,1000)
+
+elif c==Color.ORANGE
+r.beep(2400,1000)
+
+elif c==Color.NONE
+r.beep(2600,1000)
+
+elif c==Color.BLACK
+r.beep(2800,1000)
+
+elif c==Color.BROWN
+r.beep(3000,1000)
+
+elif c==Color.CYAN
+r.beep(3100,1000)
 
